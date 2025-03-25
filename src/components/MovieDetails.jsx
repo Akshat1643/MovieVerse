@@ -12,7 +12,7 @@ const MovieDetails = () => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get("http://www.omdbapi.com/", {
+        const response = await axios.get("https://www.omdbapi.com/", {
           params: {
             i: id, 
             apikey: "c2af9ce0",

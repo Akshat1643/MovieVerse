@@ -23,7 +23,7 @@ const Home = () => {
   
     const apiResponse = async () => {
       try {
-        const response = await axios.get("http://www.omdbapi.com/", {
+        const response = await axios.get("https://www.omdbapi.com/", {
           params: {
             s: SearchedMovie ? SearchedMovie : "2024",
             apikey: "c2af9ce0",

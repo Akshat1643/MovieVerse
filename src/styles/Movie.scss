@@ -1,0 +1,88 @@
+.MovieSection{
+    background-image: url("https://imgs.search.brave.com/jwAOReQ1iucWC-jvtyMnmpNI0zyqTXf3XBMbtB2_AAI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzIzLzUwLzg1/LzM2MF9GXzEyMzUw/ODUzM19Fd3RLQkpw/WERVY2pyTEhiQllD/YjZQak13OFF5eGg0/Mi5qcGc");
+    height: 100vh;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self:center;
+        >h1{
+            color: white;
+            font-size: 5rem;
+        }
+        >h3{
+            color: white;
+        }
+        >p{
+            color: white;
+            font-size: 1.5rem;
+        }
+        >div{
+            >h5{
+                color: white;
+            }
+        }
+        
+    }
+}
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+      color: #fca311;
+      margin-bottom: 1rem;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+  
+    .auth-section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  
+      .welcome-text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+  
+      button {
+        background-color: #fca311;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+  
+        &:hover {
+          background-color: #ff8800;
+        }
+      }
+    }
+  }
+ 

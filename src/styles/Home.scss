@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.poster{
+    height: 300px;
+    object-fit: cover;
+}
+.card{
+    &:hover{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15), ;
+    }
+}

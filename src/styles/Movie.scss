@@ -1,88 +1,140 @@
-.MovieSection{
-    background-image: url("https://imgs.search.brave.com/jwAOReQ1iucWC-jvtyMnmpNI0zyqTXf3XBMbtB2_AAI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzIzLzUwLzg1/LzM2MF9GXzEyMzUw/ODUzM19Fd3RLQkpw/WERVY2pyTEhiQllD/YjZQak13OFF5eGg0/Mi5qcGc");
-    height: 100vh;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;  
-    >div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self:center;
-        >h1{
-            color: white;
-            font-size: 5rem;
-        }
-        >h3{
-            color: white;
-        }
-        >p{
-            color: white;
-            font-size: 1.5rem;
-        }
-        >div{
-            >h5{
-                color: white;
-            }
-        }
-        
-    }
-}
-.movie-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to right, #1a1a2e, #16213e);
-    color: white;
-    text-align: center;
-    padding: 2rem;
+.MovieSection {
+  height: 100vh;
+  background-image: url("/watchly.webp"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3%;
   
-    .title {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-  
-    .subtitle {
-      font-size: 1.5rem;
-      color: #fca311;
-      margin-bottom: 1rem;
-    }
-  
-    .description {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-  
-    .auth-section {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  
-      .welcome-text {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+  .content {
+      width: 900px;
+      max-width: 90%; 
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(1px);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+
+      h1 {
+          font-size: 4.5rem;
+          font-weight: bold;
+          color: #E50914; 
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
       }
-  
-      button {
-        background-color: #fca311;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.3s;
-  
-        &:hover {
-          background-color: #ff8800;
-        }
+
+      h3 {
+          font-size: 1.8rem;
+          color: #fff;
+          margin-bottom: 1rem;
       }
-    }
+
+      p {
+          font-size: 1.2rem;
+          color: #e0e0e0;
+          line-height: 1.5;
+          margin-bottom: 1.5rem;
+      }
+
+      h5 {
+          font-size: 1rem;
+          color: #fff;
+          font-weight: 300;
+          margin-bottom: 2rem;
+      }
+
+      .login-btn {
+          background: #E50914;
+          color: white;
+          border: none;
+          padding: 12px 28px;
+          font-size: 1rem;
+          cursor: pointer;
+          border-radius: 50px;
+          transition: 0.3s;
+          box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.5);
+
+          &:hover {
+              background: #B20710;
+              transform: scale(1.05);
+          }
+      }
   }
- 
+
+
+  @media (max-width: 1024px) { 
+      padding-left: 5%;
+      
+      .content {
+          width: 80%;
+          padding: 1.5rem;
+
+          h1 {
+              font-size: 4rem;
+          }
+
+          h3 {
+              font-size: 1.5rem;
+          }
+
+          p {
+              font-size: 1rem;
+          }
+      }
+  }
+
+  @media (max-width: 768px) { 
+      justify-content: center;
+      padding-left: 0;
+      
+      .content {
+          width: 95%;
+          text-align: center;
+          padding: 1.5rem;
+
+          h1 {
+              font-size: 3rem;
+          }
+
+          h3 {
+              font-size: 1.3rem;
+          }
+
+          p {
+              font-size: 1rem;
+          }
+
+          .login-btn {
+              padding: 10px 20px;
+              font-size: 0.9rem;
+          }
+      }
+  }
+
+  @media (max-width: 480px) { 
+      .content {
+          width: 95%;
+          padding: 1rem;
+
+          h1 {
+              font-size: 2.5rem;
+          }
+
+          h3 {
+              font-size: 1.2rem;
+          }
+
+          p {
+              font-size: 0.9rem;
+          }
+
+          .login-btn {
+              padding: 8px 18px;
+              font-size: 0.85rem;
+          }
+      }
+  }
+}

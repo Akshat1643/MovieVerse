@@ -29,8 +29,9 @@ const MovieDetails = () => {
   }, [id]);
 
   return (
-    <section className="container mt-5">
-      {movie ? (
+    <section className="container-fluid details">
+     <div className="container">
+     {movie ? (
         <Card className="movie-details-card shadow-lg">
           <div className="row g-4">
            
@@ -71,6 +72,7 @@ const MovieDetails = () => {
       ) : (
         <p className="text-center">Loading movie details...</p>
       )}
+     </div>
     </section>
   );
 };

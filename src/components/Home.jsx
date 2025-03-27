@@ -25,7 +25,7 @@ const Home = () => {
       try {
         const response = await axios.get("https://www.omdbapi.com/", {
           params: {
-            s: SearchedMovie ? SearchedMovie : "2024",
+            s: Movie ? Movie : "2024",
             apikey: "c2af9ce0",
             page: pageN0,
           },
@@ -38,7 +38,7 @@ const Home = () => {
     };
   
     apiResponse();
-  }, [isAuthenticated, pageN0, SearchedMovie, navigate]);
+  }, [isAuthenticated, pageN0, Movie, navigate]);
 
   const handleChange = (e) => setMovie(e.target.value);
   const handleClick = () => {
@@ -86,7 +86,7 @@ const Home = () => {
             <h1>{`page-no:${pageN0}`}</h1>
           )}
         <Button onClick={handelHomebtn} variant="primary">Home</Button>
-        <p>Searching for: <strong>{SearchedMovie}</strong></p>
+        <p>Searching for: <strong>{Movie}</strong></p>
 
         <main>
           <div className="row row-cols-md-5 gy-4 gx-4">
